@@ -4,11 +4,8 @@ import logo from '../assets/Pokédex_logo.png'
 import { PokemonContext } from '../context/PokemonContext';
 
 export const Navigation = () => {
-
 	const {onInputChange,valueSearch,onResetForm} = useContext(PokemonContext);
-	
 	const navigate = useNavigate()
-
 	const onSearchSubmit =(e)=>{
 		e.preventDefault();
 		navigate('/search',{
@@ -16,10 +13,6 @@ export const Navigation = () => {
 		})
 		onResetForm();
 	}
-
-
-
-
   return (
     <>
 			<header className='container'>
@@ -58,7 +51,6 @@ export const Navigation = () => {
 
 				</form>
 			</header>
-
 			<Outlet />
 		</>
   )
