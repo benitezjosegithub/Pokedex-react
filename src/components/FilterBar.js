@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { PokemonContext } from '../context/PokemonContext';
+import './css/FilterBar.css'
 
 export const FilterBar = () => {
 

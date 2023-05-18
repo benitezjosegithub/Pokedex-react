@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { PokemonContext } from '../context/PokemonContext'
 import { useParams } from 'react-router-dom';
 import { CardPokemon, Loader } from '../components';
+import './css/PokemonPage.css'
 
 export const PokemonPage = () => {
 
@@ -68,7 +69,7 @@ export const PokemonPage = () => {
                   pokemon.stats.map(stats => (
                     <div className='stat-group'>
                       <span>{stats.stat.name}</span>
-                      <div className='progress-bar'></div>
+                      <div className='progress-bar' style={{width: `${stats.base_stat}%`}}></div>
                       <span className='counter-stat'>
                         {stats.base_stat}
                       </span>
