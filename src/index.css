@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;500;700&display=swap');
+@import url('bootstrap/dist/css/bootstrap.min.css');
 
 :root {
 	--color-fire: #ff7402;
@@ -74,13 +75,6 @@ header form {
 	margin-bottom: 20px;
 	cursor: pointer;
 }
-
-.icon-filter .icon {
-	width: 30px;
-	height: 30px;
-	stroke: #555;
-}
-
 
 
 /* Types of Pokemon */
@@ -158,24 +152,14 @@ header form {
 
 /* Container Filters */
 .container-filters {
+
 	display: flex;
 	justify-content: center;
-
-	position: fixed;
-	top: 0;
-	left: -300px;
-	width: 250px;
-
 	color: #555;
 	background-color: #f2f2f2;
-	height: 100%;
-	padding-top: 140px;
-	transition: all 0.3s linear;
+	
 }
 
-.container-filters.active {
-	left: 0;
-}
 
 
 /* Loader */
